@@ -1,0 +1,20 @@
+﻿@using Mvc_Odev.Models;
+@model Movies
+<hr />
+<div class="card" style="width: 18rem;">
+    <img src="https://cdn.evrimagaci.org/cNrda8K_W3g0d3Rk3g83SBb6UEs=/evrimagaci.org%2Fpublic%2Fmi_media%2F5d7336ba0b8ce6893c8075f887d4dd33.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Film</h5>
+        <p class="card-text">
+            @Model.Id <br />
+            @Model.Film <br />
+            @Model.Kategori <br />
+            @Model.Yapimci
+        </p>
+
+    </div>
+</div>
+
+<hr />
+
+<a class="btn btn-info fw-bold" href="/film/list">Bütün filmleri görüntüle</a>

@@ -1,0 +1,24 @@
+﻿@using Mvc_Odev.Models;
+@model List<Movies>
+Filmler Listeleniyor..
+<br />
+<div>
+
+   @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@Model[i].Film</h5>
+                <p class="card-text">
+                    @Model[i].Id <br />
+                    @Model[i].Film <br />
+                    @Model[i].Kategori <br />
+                    @Model[i].Yapimci
+                </p>
+
+            </div>
+        </div>
+        <hr />
+    }
+    
+</div>
